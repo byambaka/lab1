@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!-- index.php -->
+<html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+   <meta charset="UTF-8">
   </head>
   <body>
-    echo "<ul>";
-for($i=0; $i<5; $i++){
-  echo '<li>'.(++$i).'</li>';
-}
-echo "</ul>";
+    <!-- Статик болон динамик агуулгын ялгаа -->
+    <p>Энэ бол статик агуулга.</p>
+ <?php echo "PHP скриптээр, програмын кодоор үүсгэсэн динамик агуулга."; ?>
+    <p>Вэб серверийн цаг: 
+       <span><?php 
+              // Системийн цагийг HTTP гаралтад бичих
+              echo "Өнөөдөр бол " . date("Y/m/d");
+             ?></span>
+    <p>
   </body>
 </html>
